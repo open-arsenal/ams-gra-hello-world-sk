@@ -1,0 +1,42 @@
+[submodule "viz/worldview"]
+	path = viz/worldview
+	url = ../ams-gra-hello-world-sk-viz-worldview
+[submodule "viz/graupel"]
+	path = viz/graupel
+	url = ../ams-gra-hello-world-sk-viz-graupel
+[submodule "test/la-cal-harness"]
+	path = test/la-cal-harness
+	url = ../ams-gra-hello-world-sk-test-la-cal-harness
+[submodule "getting-started"]
+	path = getting-started
+	url = ../ams-gra-hello-world-sk-getting-started
+[submodule "skills/rf-fm-demod"]
+	path = skills/rf-fm-demod
+	url = ../ams-gra-hello-world-sk-skills-rf-fm-demod
+[submodule "skills/ir-search-and-track"]
+	path = skills/ir-search-and-track
+	url = ../ams-gra-hello-world-sk-skills-ir-search-and-track
+[submodule "sim/supercell"]
+	path = sim/supercell
+	url = ../ams-gra-hello-world-sk-sim-supercell
+[submodule "sensors/squall"]
+	path = sensors/squall
+	url = ../ams-gra-hello-world-sk-sensors-squall
+[submodule "libraries/ams-vita"]
+	path = libraries/ams-vita
+	url = ../ams-gra-hello-world-sk-libraries-ams-vita
+[submodule "libraries/ams-math"]
+	path = libraries/ams-math
+	url = ../ams-gra-hello-world-sk-libraries-ams-math
+[submodule "interfaces/rf-mel"]
+	path = interfaces/rf-mel
+	url = ../ams-gra-hello-world-sk-interfaces-rf-mel
+[submodule "interfaces/ir-mel"]
+	path = interfaces/ir-mel
+	url = ../ams-gra-hello-world-sk-interfaces-ir-mel
+[submodule "interfaces/common-mel"]
+	path = interfaces/common-mel
+	url = ../ams-gra-hello-world-sk-interfaces-common-mel
+[submodule "infra/sleet"]
+	path = infra/sleet
+	url = ../ams-gra-hello-world-sk-infra-sleet

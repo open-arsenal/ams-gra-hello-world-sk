@@ -1,0 +1,37 @@
+name: Auto-Update Submodules
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-submodules:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Umbrella Repository
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Pull Latest Submodule Commits
+        run: |
+          # Fetch and update all submodules to their latest tracking branch commits
+          git submodule update --remote --recursive
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Check if there are any changes to commit
+          if git diff --quiet; then
+            echo "No submodule updates found. Repository is up to date!"
+          else
+            git commit -am "chore: auto-update submodules to latest tracked commits"
+            git push origin main
+          fi
